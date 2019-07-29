@@ -30,9 +30,9 @@ export default () => {
 
   return (
     <Grid>
-      {combined.length &&
+      {combined.length > 0 &&
         combined
-          .slice(1, 5)
+          .slice(1, 15)
           .map((product: any) => <Card key={product.id} {...product} />)}
     </Grid>
   );

@@ -4,6 +4,7 @@
   "private": true,
   "homepage": "https://liketurbo.github.io/finch-test",
   "dependencies": {
+    "classnames": "^2.2.6",
     "history": "^4.9.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
@@ -11,6 +12,7 @@
     "react-router-dom": "^5.0.1"
   },
   "devDependencies": {
+    "@types/classnames": "^2.2.9",
     "@types/history": "^4.7.2",
     "@types/node": "^12.6.8",
     "@types/react": "16.8.23",
