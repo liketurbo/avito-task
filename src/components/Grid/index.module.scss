@@ -1,0 +1,8 @@
+.grid {
+  $space-between: 1em;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  grid-gap: $space-between;
+  padding: $space-between;
+}
