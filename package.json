@@ -4,12 +4,15 @@
   "private": true,
   "homepage": "https://liketurbo.github.io/finch-test",
   "dependencies": {
+    "axios": "^0.19.0",
     "classnames": "^2.2.6",
     "history": "^4.9.0",
+    "immer": "^3.1.3",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-rating": "^1.7.2",
-    "react-router-dom": "^5.0.1"
+    "react-router-dom": "^5.0.1",
+    "react-select": "^3.0.4"
   },
   "devDependencies": {
     "@types/classnames": "^2.2.9",
@@ -18,6 +21,7 @@
     "@types/react": "16.8.23",
     "@types/react-dom": "16.8.4",
     "@types/react-router-dom": "^4.3.4",
+    "@types/react-select": "^3.0.0",
     "csscomb": "^4.3.0",
     "node-sass": "^4.12.0",
     "react-scripts": "3.0.1",
