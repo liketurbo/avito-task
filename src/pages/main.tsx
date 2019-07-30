@@ -146,7 +146,9 @@ export default () => {
           styles={{
             container: base => ({
               ...base,
-              flexBasis: 170
+              flexBasis: 200,
+              paddingTop: '1em',
+              paddingLeft: '1em'
             })
           }}
           defaultValue={{ value: 'default', label: 'По умолчанию' }}
@@ -187,7 +189,9 @@ export default () => {
           styles={{
             container: base => ({
               ...base,
-              flexBasis: 170
+              flexBasis: 200,
+              paddingTop: '1em',
+              paddingLeft: '1em'
             })
           }}
           defaultValue={{ value: 'all', label: 'Все' }}
