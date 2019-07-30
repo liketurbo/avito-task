@@ -1,6 +1,7 @@
 import axios from 'axios';
 import produce from 'immer';
 import React, { Reducer, useEffect, useReducer } from 'react';
+import Loading from 'react-loading';
 import Select from 'react-select';
 
 import Card, { ICard } from '../components/Card';
@@ -128,17 +129,17 @@ export default () => {
 
       Promise.all(requests).then(([products, sellers]) => {
         dispatch({ type: 'SET_ALL_DATA', payload: { products, sellers } });
+        dispatch({ type: 'SET_LOADING', payload: false });
       });
     } catch {
       dispatch({ type: 'SET_ERROR', payload: true });
+      dispatch({ type: 'SET_LOADING', payload: false });
     }
-
-    dispatch({ type: 'SET_LOADING', payload: false });
   }, []);
 
-  console.log(state);
-
-  return (
+  return state.loading ? (
+    <Loading type="spin" color="#0091d9" />
+  ) : (
     <>
       <Header>
         <Select
@@ -200,10 +201,9 @@ export default () => {
         />
       </Header>
       <Grid>
-        {state.renderData.length > 0 &&
-          state.renderData.map((product: any) => (
-            <Card key={product.id} {...product} />
-          ))}
+        {state.renderData.map((product: any) => (
+          <Card key={product.id} {...product} />
+        ))}
       </Grid>
     </>
   );
