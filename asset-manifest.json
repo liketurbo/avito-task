@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/avito-test/static/css/main.bcb34157.chunk.css",
+    "main.js": "/avito-test/static/js/main.bd9b245b.chunk.js",
+    "main.js.map": "/avito-test/static/js/main.bd9b245b.chunk.js.map",
+    "runtime~main.js": "/avito-test/static/js/runtime~main.679f9f6c.js",
+    "runtime~main.js.map": "/avito-test/static/js/runtime~main.679f9f6c.js.map",
+    "static/js/2.4d7449ff.chunk.js": "/avito-test/static/js/2.4d7449ff.chunk.js",
+    "static/js/2.4d7449ff.chunk.js.map": "/avito-test/static/js/2.4d7449ff.chunk.js.map",
+    "index.html": "/avito-test/index.html",
+    "precache-manifest.aa232e8865d22c3988073387da34e4aa.js": "/avito-test/precache-manifest.aa232e8865d22c3988073387da34e4aa.js",
+    "service-worker.js": "/avito-test/service-worker.js",
+    "static/css/main.bcb34157.chunk.css.map": "/avito-test/static/css/main.bcb34157.chunk.css.map"
+  }
+}
