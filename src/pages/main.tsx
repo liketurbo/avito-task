@@ -1,12 +1,12 @@
 import axios from 'axios';
 import produce from 'immer';
 import React, { Reducer, useEffect, useReducer } from 'react';
-import Loading from 'react-loading';
 import Select from 'react-select';
 
 import Card, { ICard } from '../components/Card';
 import Grid from '../components/Grid';
 import Header from '../components/Header';
+import Loading from '../components/Loading';
 
 const reducer: Reducer<any, any> = (state, action) => {
   switch (action.type) {
@@ -138,7 +138,7 @@ export default () => {
   }, []);
 
   return state.loading ? (
-    <Loading type="spin" color="#0091d9" />
+    <Loading />
   ) : (
     <>
       <Header>
