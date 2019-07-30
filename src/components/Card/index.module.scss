@@ -77,6 +77,8 @@
   align-self: center;
 
   cursor: pointer;
+  transition: transform .2s, opacity .1s;
+  transition-timing-function: ease-in-out;
 
   opacity: .5;
   color: #ff6163;
@@ -89,5 +91,9 @@
 
   &_active {
     opacity: 1;
+  }
+
+  &:hover {
+    transform: scale(1.5);
   }
 }
