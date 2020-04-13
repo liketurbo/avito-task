@@ -1,6 +1,6 @@
 # Avito test
 
-## [Demo](https://liketurbo.github.io/avito-test)
+## [Demo](https://liketurbo.github.io/avito-task)
 
 ## Stack
 
